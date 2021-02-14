@@ -1,0 +1,32 @@
+ {% extends 'base.html' %}
+
+ {%block main %}
+ <div class="mainwrapbox">
+     <div><img src="{{ url_for ('static', filename='sb.jpg') }}" class="Profile_Picture"> </div>
+     
+     <div= class="picbox">
+         <div id= "full name"> <h1>Shawna-Kay Bailey</h1></div>
+         <div id= "username"> @sbailey</div>
+         <div id= "location"> Kingston, Jamaica</div>
+         <div id= "date joined"> Joined {{ datejoined }}</divid></div>
+     </div>
+
+     <div class="infobox">
+        <div id= "bio"> I am smart and talented young woman who loves website design and development. Contact me if you'd like to work together on a new project.</div>
+        <div class="container">
+            <div class="row">
+                <div class= "column1"> 7</div>
+                <div class= "column1"> 50</div>
+                <div class= "column1"> 100</div>
+            </div>
+            <div class="row">
+                <div class= "column"> Posts </div>
+                <div class= "column"> Followers </div>
+                <div class= "column"> Following </div>
+            </div>
+        </div>    
+        <button class="followbutton" type= "button" >Follow</button>
+     </div>
+     
+ </div>
+ {% endblock %}
